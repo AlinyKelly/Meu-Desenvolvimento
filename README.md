@@ -2,12 +2,14 @@
  Aqui encontram-se meus projetos desenvolvidos durante a faculdade e cursos.
  
  ## Seja Bem-vindo(a)!
- Você encontrará aqui diversas atividades e projetos, que estarão organizados por níveis.
- Os níveis são Básico, Intermediário e Avançado.
-
+ Você encontrará aqui diversas atividades e projetos, que estarão organizados por Faculdade e Cursos.
+ Cada pasta leva o nome do curso, no qual o projeto foi realizado.
+ 
  ## Onde estudo.
  Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Universidade Estácio FIC - Ceará.
  Complemento meus estudos, fazendo cursos online. Segue a lista dos cursos.
+ 
+ Digital Innovation One - Bootcamp HTML Web Developer 
  
  Udemy - Desenvolvimento Web Completo 2020 - Status: Em Andamento
  

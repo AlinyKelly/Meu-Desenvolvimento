@@ -50,9 +50,53 @@ if (idade >=18){
 }else {
     alert("Menor de idade.")
 }
-*/
+
+// Laço de repetição While
+
 var count = 5;
 while (count < 5){
     console.log(count);
     count = count + 1;
 }
+
+// Laço de repetição For
+var count;
+for(count=1; count <= 5; count++ ){
+    alert(count);
+}
+
+// Datas
+var d = new Date();
+alert(d.getDate());
+alert(d.getHours());
+alert(d.getMinutes());
+*/
+
+//----------------------------------AULA 3---------------------
+//----EXEMPLO 1-----
+/*
+function soma(n1, n2){
+    return n1 + n2;
+}
+alert (soma(5, 10));
+*/
+
+//----EXEMPLO 2-----
+//function setReplace (frase, nome, novo_nome){
+//   return frase.replace(nome, novo_nome)
+//}
+//alert(setReplace("Vai Japão", "Japâo", "Brasil"));
+
+//----EXEMPLO 3-----
+var validar = 0;
+function validaIdade(idade){
+    if (idade >= 18){
+        validar = true
+    } else{
+        validar = false
+    }
+    return validar;
+}
+var idade = prompt("Qual sua idade?");
+validaIdade(idade)
+console.log(validar);

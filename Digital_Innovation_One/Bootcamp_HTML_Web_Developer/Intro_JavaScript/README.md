@@ -20,4 +20,12 @@ lowerCase, upperCase
 Redirecionar para outra página
 date
 function
-
+dom
+getElement
+innerHTML
+onClick
+Redirecionar para outra página
+onmouseover
+onmouseout
+onchange
+onload

@@ -88,6 +88,7 @@ alert (soma(5, 10));
 //alert(setReplace("Vai Japão", "Japâo", "Brasil"));
 
 //----EXEMPLO 3-----
+/*
 var validar = 0;
 function validaIdade(idade){
     if (idade >= 18){
@@ -100,3 +101,61 @@ function validaIdade(idade){
 var idade = prompt("Qual sua idade?");
 validaIdade(idade)
 console.log(validar);
+*/
+
+//----------------------------------AULA 4---------------------
+//----EXEMPLO 1-----
+/*
+function clicou(){
+    alert("Obrigada por clicar")
+}
+*/
+
+//----EXEMPLO 2-----
+/*
+function clicou(){
+    console.log(document.getElementById("Agradecimento"))
+}
+*/
+
+//----EXEMPLO 3-----
+
+function clicou(){
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigada por clicar</b>";
+}
+
+//----EXEMPLO 4-----
+function redirecionar(){
+    //window.open("https://digitalinnovation.one");
+    window.location.href = "https://digitalinnovation.one";
+}
+
+//----EXEMPLO 5-----
+function trocar(){
+    alert("trocar texto");
+}
+
+//----EXEMPLO 6-----
+function trocar(elemento){
+    //document.getElementById("mousemove").innerHTML = "Obrigada por passar o mouse";
+    //Trabalhando com o this
+    elemento.innerHTML = "Obrigada por passar o mouse";
+}
+
+//----EXEMPLO 7-----
+function voltar(elemento){
+    //document.getElementById("mousemove").innerHTML = "Passe o mouse aqui.";
+    //Trabalhando com o this
+    elemento.innerHTML = "Passe o mouse aqui.";
+
+}
+
+//----EXEMPLO 8-----
+function load(){
+    alert("Página carregada.");
+}
+
+//----EXEMPLO 9-----
+function funcaoChange(elemento){
+    console.log(elemento.value)
+}

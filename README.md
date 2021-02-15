@@ -6,10 +6,12 @@
  Cada pasta leva o nome do curso, no qual o projeto foi realizado.
  
  ## Onde estudo.
- Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Universidade Estácio FIC - Ceará.
+ Atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNIFOR - Universidade de Fortaleza.
  Complemento meus estudos, fazendo cursos online. Segue a lista dos cursos.
  
- Digital Innovation One - Bootcamp HTML Web Developer 
+ Digital Innovation One - Bootcamp HTML Web Developer - Concluido
+ 
+ Rocketseat - Maratona Discover
  
  Udemy - Desenvolvimento Web Completo 2020 - Status: Em Andamento
  

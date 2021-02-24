@@ -8,12 +8,12 @@
 
 **Professor** - Átila Brandão
 
+----------------------------------------------------------------------------------------------------
 
 
+**[Problema 1035 - Teste de Seleção 1](https://www.urionlinejudge.com.br/judge/pt/problems/view/1035)
 
-###[Problema 1035 - Teste de Seleção 1](https://www.urionlinejudge.com.br/judge/pt/problems/view/1035)
-
-**Resolução**
+**_Resolução_**
 
 ```
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');

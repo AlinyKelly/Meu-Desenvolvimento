@@ -11,7 +11,7 @@
 ----------------------------------------------------------------------------------------------------
 
 
-**[Problema 1035 - Teste de Seleção 1](https://www.urionlinejudge.com.br/judge/pt/problems/view/1035)
+[Problema 1035 - Teste de Seleção 1](https://www.urionlinejudge.com.br/judge/pt/problems/view/1035)
 
 **_Resolução_**
 

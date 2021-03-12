@@ -31,25 +31,21 @@ if (B > C && D > A && C + D > A + B && C > 0 && D > 0 && A % 2 == 0) {
 
 **_Resolução_**
 
-Resolução erro de 10% verificar
-
 ```
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
 
-const [A, B, C] = input.split(" ").map(item => parseFloat(item));
-const X1;
-const X2;
-const delta = (B * B) - 4 * A * C;
+var [A, B, C] = input.split(" ").map(item => parseFloat(item));
+var delta = (B * B) - 4 * A * C;
 
-if (delta < 0) {
-	console.log("Impossível calcular");
+if (delta < 0 || A == 0) {
+	console.log("Impossivel calcular");
 } else {
-	X1 = ( -B + Math.sqrt(delta)) / (2 * A);
-	X2 = ( -B - Math.sqrt(delta)) / (2 * A);
+	const X1 = ( -B + Math.sqrt(delta)) / (2 * A);
+	const X2 = ( -B - Math.sqrt(delta)) / (2 * A);
 
 	console.log("R1 = " + X1.toFixed(5));
 	console.log("R2 = " + X2.toFixed(5));
-}
 }
 ```
 
@@ -78,7 +74,6 @@ if (valor < 0 || valor > 100) {
         console.log("Intervalo (75,100]");
     }        
     return 0;
-
 ```
 
 [Problema 1038 - Lanche](https://www.urionlinejudge.com.br/judge/pt/problems/view/1038)
@@ -103,7 +98,6 @@ if(cod == 1){
 
 	return 0;
 }
-
 ```
 
 [Problema 1040 - Média 3](https://www.urionlinejudge.com.br/judge/pt/problems/view/1040)
@@ -112,8 +106,9 @@ if(cod == 1){
 
 ```
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
 
-var [N1, N2, N3, N4, N5] = input.split(" ").map(item => parseFloat(item));
+var [N1, N2, N3, N4] = lines.shift().split(" ").map(item => parseFloat(item));
 
 var media = ((N1*2) + (N2*3) + (N3*4) + (N4*1)) / 10;
 console.log("Media: " + media.toFixed(1));
@@ -124,7 +119,9 @@ if (media >= 7.0){
 } else if (media >= 5.0 && media <= 6.9){
     console.log("Aluno em exame.");
 
-    console.log("Nota do exame: " + N5);
+    let [N5] = lines.shift().split(" ").map(item => parseFloat(item));
+
+    console.log("Nota do exame: " + N5.toFixed(1));
 
     media = (media + N5) / 2;
 
@@ -139,8 +136,6 @@ if (media >= 7.0){
 } else {
     console.log("Aluno reprovado.");
 }
-
-
 ```
 
 [Problema 1041 - Coordenadas de um Ponto](https://www.urionlinejudge.com.br/judge/pt/problems/view/1041)

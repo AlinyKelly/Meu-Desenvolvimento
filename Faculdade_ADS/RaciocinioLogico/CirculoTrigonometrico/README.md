@@ -9,7 +9,7 @@
 **Aluna:** Aliny Kelly Ferreira de Sousa - Matrícula: 2116322
 
 ####Questão
-**1 -** Faça um programa que receba a medida de um ângulo em graus. Considere os quadrantes da
+**1 -** :computer: Faça um programa que receba a medida de um ângulo em graus. Considere os quadrantes da
 trigonometria, calcule e mostre:
 
 **a)** o quadrante em que se localiza esse ângulo.

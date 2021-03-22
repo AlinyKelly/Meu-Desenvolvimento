@@ -25,6 +25,7 @@ function enviar(){
             document.getElementById("resultado").innerHTML = "O ângulo " + angulo + "º deu " + Math.trunc(voltaspos) + " volta(s) completa(s) no círculo e corresponde ao ângulo " + novoangulo + "º.<br>";
         }else{
             novoangulo = angulo;
+            document.getElementById("resultado").innerHTML = "<br>";
         }
      }
     // testar o quadrante

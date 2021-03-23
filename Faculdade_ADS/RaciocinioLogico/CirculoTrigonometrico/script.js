@@ -16,7 +16,7 @@ function enviar(){
             document.getElementById("resultado").innerHTML = "O ângulo " + angulo + "º deu " + Math.trunc(voltasneg) + " volta(s) completa(s) no círculo e corresponde ao ângulo positivo congruente " + novoangulo + "º.<br>";
         } else {
             novoangulo = (-360) - angulo; // verifica se o angulo inserido é zero
-            document.getElementById("resultado").innerHTML = "O ângulo " + angulo + "º corresponde a  " + novoangulo + "º.<br>";
+            document.getElementById("resultado").innerHTML = "O ângulo " + angulo + "º corresponde a  " + novoangulo + "º.<br>"; 
         }
      }else{ // para angulo positivo
         if(angulo > 360){
@@ -38,5 +38,4 @@ function enviar(){
     }else if(novoangulo > 270 && novoangulo <= 360){
         document.getElementById("resultadoquadrante").innerHTML = "O ângulo encontra-se no Quarto Quadrante.<br>";
     }
-
 }

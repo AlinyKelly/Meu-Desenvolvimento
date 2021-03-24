@@ -8,6 +8,11 @@
 
 **Aluna:** Aliny Kelly Ferreira de Sousa - Matrícula: 2116322
 
+
+## Vídeo Explicativo
+
+[Círculo Trigonométrico](https://youtu.be/k7WSLRQGUVs)
+
 ## Questão
 **1 -** :computer: Faça um programa que receba a medida de um ângulo em graus. Considere os quadrantes da
 trigonometria, calcule e mostre:

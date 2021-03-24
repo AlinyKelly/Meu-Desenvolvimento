@@ -1,24 +1,14 @@
 ## Bem-Vindo a minha página do GitHub
 
-Aqui você encontrá meu desenvolvimento, ou seja, minha evolução durante a faculdade de Análise e Desenvolvimento de Sistemas, e também nos cursos complementares.
+Hello World!
 
-### Repositório 'Meu Desenvolvimento'
+### ↗ [Repositório 'Meu Desenvolvimento'](https://github.com/AlinyKelly/Meu-Desenvolvimento)
 
-Este repositório está organizado da seguinte forma.
-
-```markdown
-
-- Básico
-- Intermediário
-- Avançado
-
-```
+Confira os projetos que estou desenvolvendo no decorrer da Faculdade e dos Cursos extra.
 
 ### Redes Sociais
+[LinkedIn](www.linkedin.com/in/alinykelly).
 
 [Instagram](https://www.instagram.com/alinykellyfs/).
 
 [Twitter](https://twitter.com/alinykellyfs).
-
-[LinkedIn](www.linkedin.com/in/alinykelly).
-

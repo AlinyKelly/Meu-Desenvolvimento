@@ -143,7 +143,28 @@ if (media >= 7.0){
 **_Resolução_**
 
 ```
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
 
+var [x, y] = lines.shift().split(" ").map(item => parseFloat(item));
+
+if(x == 0 && y == 0){
+    console.log("Origem");
+}else if(x == 0){
+    console.log("Eixo Y");
+}else if(y == 0){
+    console.log("Eixo X");
+}else if(x > 0 && y > 0){
+    console.log("Q1");
+}else if(x > 0 && y < 0){
+    console.log("Q4");
+}else if(x < 0 && y > 0){
+    console.log("Q2");
+}else{
+    console.log("Q3");
+}
+
+return 0;
 ```
 
 [Problema 1045 - Tipode de Triângulos](https://www.urionlinejudge.com.br/judge/pt/problems/view/1045)
@@ -151,7 +172,47 @@ if (media >= 7.0){
 **_Resolução_**
 
 ```
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
 
+var [A, B, C] = lines.shift().split(" ").map(item => parseFloat(item));
+
+var ladoA = Math.max(A, Math.max(B, C));
+var ladoB = 0;
+var ladoC = 0;
+
+        if (ladoA == A) {
+            ladoB = Math.max(B, C);
+            ladoC = Math.min(B, C);
+        }
+        if (ladoA == B) {
+            ladoB = Math.max(A, C);
+            ladoC = Math.min(A, C);
+        }
+        if (ladoA == C) {
+            ladoB = Math.max(B, A);
+            ladoC = Math.min(B, A);
+        }
+        
+        if (ladoA >= (ladoB + ladoC)) {
+            console.log("NAO FORMA TRIANGULO");
+
+        } else if (ladoA * ladoA > ((ladoB * ladoB) + (ladoC * ladoC))) {
+            console.log("TRIANGULO OBTUSANGULO");
+        }
+        if (ladoA * ladoA == ((ladoB * ladoB) + (ladoC * ladoC))) {
+            console.log("TRIANGULO RETANGULO");
+        }
+
+        if (ladoA * ladoA < ((ladoB * ladoB) + (ladoC * ladoC))) {
+            console.log("TRIANGULO ACUTANGULO");
+        }
+        if ((ladoA == ladoB) && (ladoA == ladoC)) {
+            console.log("TRIANGULO EQUILATERO");
+        }
+        if (((ladoA == ladoB) && (ladoA != ladoC)) || ((ladoA == ladoC) && (ladoA != ladoB)) || ((ladoB == ladoC) && (ladoB != ladoA))) {
+            console.log("TRIANGULO ISOSCELES");
+        }
 ```
 
 [Problema 1048 - Aumento de Salário](https://www.urionlinejudge.com.br/judge/pt/problems/view/1048)
@@ -159,7 +220,44 @@ if (media >= 7.0){
 **_Resolução_**
 
 ```
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
 
+var [salario] = lines.shift().split(" ").map(item => parseFloat(item));
+var novoSal = 0.00;
+var reajuste = 0.00;
+
+if (salario >= 0.00 && salario <= 400.00){
+    novoSal = salario + (salario * 0.15);
+    reajuste = (salario * 0.15);
+    console.log("Novo salario: " + novoSal.toFixed(2));
+    console.log("Reajuste ganho: " + reajuste.toFixed(2));
+    console.log("Em percentual: 15 %");
+}else if (salario >= 400.01 && salario <= 800.00){
+    novoSal = salario + (salario * 0.12);
+    reajuste = (salario * 0.12);
+    console.log("Novo salario: " + novoSal.toFixed(2));
+    console.log("Reajuste ganho: " + reajuste.toFixed(2));
+    console.log("Em percentual: 12 %");
+}else if (salario >= 800.01 && salario <= 1200.00){
+    novoSal = salario + (salario * 0.10);
+    reajuste = (salario * 0.10);
+    console.log("Novo salario: " + novoSal.toFixed(2));
+    console.log("Reajuste ganho: " + reajuste.toFixed(2));
+    console.log("Em percentual: 10 %");
+}else if (salario >= 1200.01 && salario <= 2000.00){
+    novoSal = salario + (salario * 0.07);
+    reajuste = (salario * 0.07);
+    console.log("Novo salario: " + novoSal.toFixed(2));
+    console.log("Reajuste ganho: " + reajuste.toFixed(2));
+    console.log("Em percentual: 7 %");
+}else if (salario >= 2000.01){
+    novoSal = salario + (salario * 0.04);
+    reajuste = (salario * 0.04);
+    console.log("Novo salario: " + novoSal.toFixed(2));
+    console.log("Reajuste ganho: " + reajuste.toFixed(2));
+    console.log("Em percentual: 4 %");
+}
 ```
 
 [Problema 1051 - Imposto de Renda](https://www.urionlinejudge.com.br/judge/pt/problems/view/1051)
@@ -167,5 +265,38 @@ if (media >= 7.0){
 **_Resolução_**
 
 ```
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
 
+var [salario] = lines.shift().split(" ").map(item => parseFloat(item));
+var imposto = 0.00;
+var taxa1, taxa2, taxa3 = 0.00;
+
+        if (salario <= 2000) {
+            console.log("Isento");
+        } else {
+            if (salario > 2000 && salario <= 3000) {
+                taxa1 = salario - 2000;
+                taxa1 = ((taxa1 * 8) / 100);
+                imposto = taxa1;
+            } else if (salario > 3000 && salario <= 4500) {
+                taxa1 = salario - 2000;
+                taxa2 = taxa1 - 1000;
+                taxa1 -= taxa2;
+                taxa1 = ((taxa1 * 8) / 100);
+                taxa2 = ((taxa2 * 18) / 100);
+                imposto = taxa2 + taxa1;
+            } else {
+                taxa1 = salario - 2000;
+                taxa2 = taxa1 - 1000;
+                taxa3 = taxa2 - 1500;
+                taxa1 -= taxa2;
+                taxa2 -= taxa3;
+                taxa1 = ((taxa1 * 8) / 100);
+                taxa2 = ((taxa2 * 18) / 100);
+                taxa3 = ((taxa3 * 28) / 100);
+                imposto = taxa3 + taxa2 + taxa1;
+            }
+            console.log("R$ " + imposto.toFixed(2));
+        }
 ```
